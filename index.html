@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="shortcut icon"
+      href="./images/favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Frontend Mentor | Advice generator app</title>
+  </head>
+  <body class="bg-[hsl(218,23%,16%)] font-[Manrope]">
+    <div
+      class="card w-[25rem] md:w-[30rem] h-80 rounded-xl shadow-xl bg-[hsl(217,19%,24%)] absolute top-1/2 left-1/2 -translate-1/2 p-4 text-center py-10"
+    >
+      <p class="uppercase text-[hsl(150,100%,66%)] font-bold">
+        advice # <span id="num">117</span>
+      </p>
+      <p
+        class="text-[hsl(193,38%,86%)] text-lg md:text-2xl font-semibold mt-10"
+        id="text"
+      >
+        It's easy to sit up and take notice, what's difficult is getting up and
+        taking action
+      </p>
+      <!-- DIVIDER -->
+      <div class="">
+        <img src="./images/pattern-divider-desktop.svg" class="py-10" alt="" />
+      </div>
+      <!-- DICE SERVING AS A BUTTON -->
+      <div class="flex justify-center relative top-5 md:top-[-1rem]">
+        <div
+          class="bg-[hsl(150,100%,66%)] size-15 rounded-full flex justify-center items-center cursor-pointer hover:shadow-lg shadow-[hsl(150,100%,66%)] transition-all duration-300 fixed"
+          id="diceBtn"
+        >
+          <img src="./images/icon-dice.svg" alt="" class="" />
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
